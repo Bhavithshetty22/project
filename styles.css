@@ -1,0 +1,824 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #F4E4CD;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  
+}
+
+.logo>img {
+  height: 40px;
+  width: 40px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  animation: bounceIn 1s ease forwards;
+  
+}
+
+#title {
+  width: auto;
+  max-width: 100%;
+  height: 40px;
+  
+}
+.container{
+ 
+  height: 920px;
+  width: 100%;
+}
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.box {
+  background-color: #121112;
+  height: 980px;
+  width: 50%;
+  border-radius: 60px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+   
+}
+nav ul li{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 21px;
+  color: #938B89;
+  
+}
+nav ul li a {
+  color: #938B89;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transition for color and scale */
+    display: inline-block; /* Needed for scaling effect */
+    position: relative;
+}
+nav ul li a:hover {
+    color: #AF8F6F; /* Change text color on hover */
+    transform: scale(1.1); /* Slight scaling effect on hover */
+}
+/* From Uiverse.io by shah1345 */ 
+.button2 {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  padding: 0.5em 1.6em;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #938B89;
+  
+  
+}
+
+.button2:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.button2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #009087;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:hover {
+  color: #ffffff;
+  border: 1px solid #009087;
+}
+
+.button2:hover:before {
+  top: -35%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button2:hover:after {
+  top: -45%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+img{
+  display: flex;
+  justify-content: center;
+  height:50% ;
+  margin-left:60px;
+  margin-top: 130px;
+}
+.info 
+{
+  margin-left: 120px;
+  margin-top: 120px;
+
+
+}
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+
+.info h2{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 21px;
+  color: #938B89;
+}
+.info h1{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 64px;
+  margin-top: 23px;
+  
+
+}
+.info p{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 19px;
+  color: #938B89;
+  margin-top: 33px;
+}
+
+.cssbuttons-io-button {
+  background: #131313;
+  color: #BDBBB7;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display:inline-flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #131313;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+  
+ 
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #131313;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #131313;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+.button1 {
+  padding: 0.35em;
+  padding-left: 1.2em;
+  padding-right: 3.3em;
+  border: unset;
+  border-radius: 0.9em;
+  color: #908E8D;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  height: 2.8em;
+  margin-right: 15px;
+  
+ }
+ 
+ .button1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #131313;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms
+ }
+ 
+ .button1:hover {
+  color: #BDBBB7;
+ }
+ 
+ .button1:hover::before {
+  width: 100%;
+ }
+
+
+.container2{
+  
+  height: 486.99px;
+  width: 100%;
+  position: relative;
+}
+.time{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-right:15%;
+  
+}
+.time h1{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 72px;
+  margin-top: 25px;
+}
+.time p{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 19px;
+  color: #938B89;
+  margin-top: 13px;
+}
+.cssbuttons-io-button1 {
+  background: #131313;
+  color: #BDBBB7;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display:inline-flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #131313;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+  margin-top: 30px;
+ 
+}
+
+.cssbuttons-io-button1 .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #131313;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button1:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button1 .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #131313;
+}
+
+.cssbuttons-io-button1:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button1:active .icon {
+  transform: scale(0.95);
+}
+.container3 {
+  height: 530px;
+  background-color: #FFFDFC;
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.quiz {
+  text-align: center;
+}
+
+.quiz h1 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 73px;
+}
+
+.quiz p {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 17px;
+  color: #938B89;
+  margin-top: 9px;
+}
+.button3 {
+  padding: 0.35em;
+  padding-left: 1.2em;
+  padding-right: 3.3em;
+  border: unset;
+  border-radius: 0.9em;
+  color: #908E8D;
+  z-index: 1;
+  background: #131313;
+  position: relative;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  height: 2.8em;
+  margin-top: 30px;
+  
+ }
+ 
+ .button3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #131313;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms
+ }
+ 
+ .button3:hover {
+  color: #BDBBB7;
+ }
+ 
+ .button3:hover::before {
+  width: 100%;
+ }
+.container4 {
+  background-color: #FFFBF5;
+  height: 750px;
+  position: relative;
+  display: flex;
+  justify-content: space-between; /* Distributes items across the width */
+ /* Vertically centers items */
+  padding: 0 120px; /* Optional: Adjust padding as needed */
+}
+ .to-do{
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 120px;
+  -webkit-animation: slide-right 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-right 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ .to-do h1{
+   font-family: "Playfair Display", serif;
+   font-optical-sizing: auto;
+   font-weight: 600;
+   font-style: normal;
+   font-size: 58px;
+   
+   
+ 
+ }
+ .to-do p{
+   font-family: "Work Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 500;
+   font-style: normal;
+   font-size: 19px;
+   color: #938B89;
+   margin-top: 20px;
+ }
+ .container4 img {
+  position: absolute;
+  height: 750px;
+  top: -180px; /* Adjust this value as needed */
+  right: 0;
+  margin-right: 80px;
+}
+
+ 
+
+.container5 {
+  background-color: #FFFBF5;
+  height: 800px;
+  position: relative;
+  display: flex;
+  align-items: center; /* Centers the image vertically */
+ 
+}
+
+.container5 img {
+  margin: 0;
+  height: 550px;
+  margin-left: 40px;
+}
+
+.elevate{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-right:15%;
+}
+.elevate h2{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 19px;
+  color: #938B89;
+  margin-top: 40px;
+}
+.elevate h1{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 58px;
+  margin-top: 23px;
+}
+.elevate p{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  color: #938B89;
+  margin-top: 11px;
+  margin-bottom: 50px;
+}
+.container6 {
+  height: 800px;
+  background-color: #FFFBF5;
+ 
+}
+.container7{
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+}
+
+.features {
+  text-align: center;
+}
+
+.features h1 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 69px;
+}
+
+.features p {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  color: #938B89;
+  margin-top: 13px;
+}
+.box1{
+  display: flex; /* Enable flexbox */
+  justify-content: center; /
+
+}
+.list{
+  width: 330px;
+  height: 390px;
+  border-radius: 5px;
+  border: 2px solid #3F3C3B;
+  margin-top: 60px;
+  text-align: center;
+  padding-left: 18.5px;
+  padding-right: 18.5px;
+  padding-top: 31px;
+  padding-bottom: 56px;
+  
+ 
+}
+.pomo{
+  width: 330px;
+  height: 390px;
+  border-radius: 5px;
+  border: 2px solid #3F3C3B;
+  margin-top: 60px;
+  margin-left:50px ;
+  text-align: center;
+  padding-left: 18.5px;
+  padding-right: 18.5px;
+  padding-top: 31px;
+  padding-bottom: 56px;
+}
+.track{
+  width: 330px;
+  height: 390px;
+  border-radius: 5px;
+  border: 2px solid #3F3C3B;
+  margin-top: 60px;
+  margin-left:50px ;
+  text-align: center;
+  padding-left: 18.5px;
+  padding-right: 18.5px;
+  padding-top: 31px;
+  padding-bottom: 56px;
+}
+.list h2,.pomo h2,.track h2{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 26px;
+  
+}
+.list p,.pomo p,.track p{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 19px;
+  color: #938B89;
+  margin-top: 27px;
+}
+/* Example fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Example slide-in animation */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply animations only when the element is in view */
+.animate-on-scroll {
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.6s ease-out;
+}
+
+.animate-on-scroll.in-view {
+  opacity: 1;
+  animation: fadeInUp 1s ease-out forwards;
+}
+.list, .pomo, .track {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the circle horizontally */
+  justify-content: flex-start;
+  width: 330px;
+  height: 390px;
+  border-radius: 5px;
+  border: 2px solid #3F3C3B;
+  margin-top: 60px;
+  padding: 31px 18.5px 56px;
+  text-align: center;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 1px solid #3F3C3B;
+  margin: 0 auto 40px; /* Centers the circle itself within its container */
+  /* Ensures any part of the image outside the circle is hidden */
+}
+
+.circle img {
+  max-width: 100%; /* Ensures the image scales to fit within the circle */
+  max-height: 100%; /* Maintains the circular shape */
+  object-fit: cover; /* Prevents distortion */
+  display: block;
+  margin: auto;
+}
+
+.pomo .circle img{
+  height: 55px;
+}
+.track .circle img{
+  height: 55px;
+}
+.container2 img{
+  height: 500px;
+}
+
+
+@keyframes staggeredFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    color: #888;
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(10px) scale(1.02);
+    color: #555;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    color: #333;
+  }
+}
+
+.list, .pomo, .track {
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  color: #888;
+  animation: staggeredFadeIn 1.2s ease-out forwards;
+  transition: transform 0.4s ease, color 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+}
+
+.list {
+  animation-delay: 0.3s;
+}
+.pomo {
+  animation-delay: 0.7s;
+}
+.track {
+  animation-delay: 1.3s;
+}
+
+/* Enhanced hover effect for interactivity */
+.list:hover, .pomo:hover, .track:hover {
+  transform: scale(1.1) translateY(-5px); /* Slight lift and scaling */
+  color: #5a5a5a; /* Subtle color change */
+  background-color: #f9f9f9; /* Light background change for contrast */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(76, 175, 80, 0.2); /* Deeper shadow for 3D feel */
+}
+
+
+
+/* Enhanced image hover effect */
+.circle img:hover {
+  transform: scale(1.1) rotate(5deg);
+  
+  transition: transform 0.4s ease-in-out;
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
